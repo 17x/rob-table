@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "Rob table",
+  "description": "get tables on the web page and exports to specify file",
+  "version": "1.0",
+  "options_page": "option/index.html",
+  "browser_action": {
+    "default_icon": "images/icons/drag.png",
+    "default_popup": "popup/index.html",
+    "default_title": "Rob table"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "storage",
+    "downloads"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "all_frames": false,
+      "js": [
+        "content_scripts/xlsx.full.min.js",
+        "content_scripts/loadStyleTag.js",
+        "content_scripts/getTableDom.js",
+        "content_scripts/handlers.js",
+        "content_scripts/transforms.js",
+        "content_scripts/highlight.js",
+        "content_scripts/index.js"
+      ]
+    }
+  ],
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+}
