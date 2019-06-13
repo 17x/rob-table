@@ -5,7 +5,7 @@
 - csv 
 - txt
 
-![samlple gif](./sample.gif =500)
+![samlple gif](./sample.gif)
 
 #### todo list
 
