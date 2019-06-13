@@ -5,10 +5,10 @@
 - csv 
 - txt
 
-#### install:[1z5h](https:// )
-#### github:[1z5h](https:// )
+![samlple gif](./sample.gif =500)
 
 #### todo list
+
 - ~~inspect non-table-tag element~~
 - export to xlsx
 - inspect from iframe
