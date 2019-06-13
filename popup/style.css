@@ -123,7 +123,8 @@ ul, li {
 
 #tab-head {
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-start;
+	/*justify-content: space-around;*/
 	width: 30%;
 	height: 40px;
 	line-height: 40px;
