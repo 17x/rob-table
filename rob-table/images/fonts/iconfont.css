@@ -1,0 +1,44 @@
+@font-face {
+	font-family: "iconfont";
+	src: url('iconfont.ttf?t=1559716093283') format('truetype');
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tubiao01:before {
+	content: "\e610";
+}
+.icon-csv:before {
+	content: "\e601";
+}
+
+.icon-excel:before {
+	content: "\e602";
+}
+
+.icon-select:before {
+	content: "\e603";
+}
+
+.icon-copy:before {
+	content: "\e604";
+}
+
+.icon-json:before {
+	content: "\e605";
+}
+
+.icon-drag:before {
+	content: "\e606";
+}
+
+.icon-txt:before {
+	content: "\e607";
+}
+

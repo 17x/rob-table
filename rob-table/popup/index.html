@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Rob tables</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../images/fonts/iconfont.css">
+</head>
+<body>
+<div id="top-handler-wrap">
+    <!--<button class="top-handle-btn" id="enable-inspector" title="Inspector element">
+        <span class="iconfont icon-select"></span>
+    </button>-->
+    <button class="top-handle-btn" id="auto-detect-table" title="Re-detect table">
+        <span class="iconfont icon-tubiao01"></span>
+    </button>
+</div>
+<div id="tab">
+    <div id="tab-head">
+        <div class="tab-head-item active" data-tab-index="0">Detected</div>
+        <div class="tab-head-item" data-tab-index="1">Inspected</div>
+    </div>
+    <div id="tab-boxes">
+        <div class="tab-box">
+            <ul class="table-lists" id="detected-table-list"></ul>
+        </div>
+        <div class="tab-box" style="display: none">
+            <ul class="table-lists" id="inspected-table-list"></ul>
+        </div>
+    </div>
+</div>
+<script src="createTableItem.js"></script>
+<script src="switchTab.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	width: 500px;
+	height: 500px;
+}
+
+ul, li {
+	list-style-type: none;
+}
+
+#top-handler-wrap {
+	width: 100%;
+	margin: 0 auto;
+	/*padding: 0 10px;*/
+	box-shadow: 0 1px 1px 1px #dfdfdf;
+	vertical-align: middle;
+	display: flex;
+	height: 40px;
+	align-items: center;
+}
+
+.top-handle-btn {
+	background: transparent;
+	width: 40px;
+	height: 40px;
+	border: none;
+	background-size: 100% 100%;
+	outline: none;
+	cursor: pointer;
+	opacity: .5;
+}
+
+.top-handle-btn.active {
+	color: #427cff;
+	opacity: 1;
+}
+
+.top-handle-btn:hover {
+	opacity: 1;
+}
+
+.top-handle-btn:active {
+	color: #427cff;
+}
+
+#enable-inspector > span {
+	font-size: 20px;
+}
+
+.table-lists {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	height: 500px;
+	overflow-y: auto;
+}
+
+.table-lists li {
+	display: flex;
+	height: 40px;
+	line-height: 30px;
+	border-radius: 2px;
+	padding: 5px;
+	box-sizing: border-box;
+	border: none;
+	cursor: default;
+}
+
+.table-lists li:hover p {
+	color: #427cff;
+}
+
+.table-lists li p {
+	width: 300px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.handle-export-button {
+	height: 30px;
+	margin-left: 5px;
+	cursor: pointer;
+	font-size: 10px;
+	min-width: 40px;
+	/*padding-left: 15px;*/
+	border: 1px solid #888;
+	border-radius: 3px;
+	text-align: center;
+	background: #fff center center no-repeat;
+	background-size: 20px auto;
+	outline: none;
+}
+
+.handle-export-button:hover {
+	opacity: 1;
+	border-color: #427cff;
+	color: #427cff;
+}
+
+
+.handle-export-button.json {
+}
+
+.handle-export-button.csv {
+
+}
+
+.handle-export-button.excel {
+
+}
+
+.handle-export-button.txt {
+
+}
+
+#tab {
+}
+
+#tab-head {
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 12px;
+	/*border-bottom: 1px solid #dfdfdf;*/
+}
+
+.tab-head-item:nth-child(1) {
+	border-right: 1px solid #dfdfdf;
+}
+
+.tab-head-item {
+	text-align: center;
+	width: 50%;
+	cursor: pointer;
+	border-bottom: 1px solid #dfdfdf;
+	border-right: 1px solid #dfdfdf;
+}
+
+.tab-head-item:hover {
+	text-decoration: underline;
+}
+
+.tab-head-item.active {
+	color: #427cff;
+	border-bottom-color: #427cff;
+}
